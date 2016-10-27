@@ -42,20 +42,20 @@ void loop() {
 
     if (startmodule_state == WAITING)
   {
-    //Serial.println("WAIT");
+    Serial.println("WAIT");
     oneNeo(3,0,0,100);
     carWait();
   }
   else if (startmodule_state == RUNNING)
   {
-    //Serial.println("DRIVE");
+    Serial.println("DRIVE");
     carDrive();
     oneNeo(3,0,100,0);
     police_light();
   }
   else if (startmodule_state == STOP)
   {
-    //Serial.println("STOP");
+    Serial.println("STOP");
     ledOff();
     oneNeo(3,100,0,0);
     carStop();

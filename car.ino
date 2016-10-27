@@ -5,7 +5,7 @@
 
 void carWait()
 {
-  ledBlink(LED_SLOW_BLINK);
+  //ledBlink(LED_SLOW_BLINK);
   allStop();
 }
 

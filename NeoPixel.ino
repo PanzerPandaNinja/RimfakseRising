@@ -18,9 +18,9 @@ void police_light(){
     strip.setPixelColor(1, 100, 0, 0);  
     strip.setPixelColor(2, 100, 0, 0);
     //strip.setPixelColor(3, 0, 100, 0);
-    strip.setPixelColor(4, 0, 0, 100);
-    strip.setPixelColor(5, 0, 0, 100);
-    strip.setPixelColor(6, 0, 0, 100);  
+    //strip.setPixelColor(4, 0, 0, 100);
+    //strip.setPixelColor(5, 0, 0, 100);
+    //strip.setPixelColor(6, 0, 0, 100);  
     strip.show();
 	}
 	
@@ -29,9 +29,9 @@ void police_light(){
     strip.setPixelColor(1, 0, 0, 100);  
     strip.setPixelColor(2, 0, 0, 100);
     //strip.setPixelColor(3, 0, 0, 0);
-    strip.setPixelColor(4, 100, 0, 0);
-    strip.setPixelColor(5, 100, 0, 0);
-    strip.setPixelColor(6, 100, 0, 0);  
+    //strip.setPixelColor(4, 100, 0, 0);
+    //strip.setPixelColor(5, 100, 0, 0);
+    //strip.setPixelColor(6, 100, 0, 0);  
 
     strip.show();
 	}
@@ -42,10 +42,10 @@ void ledOff()
     strip.setPixelColor(0, 0, 0, 0);
     strip.setPixelColor(1, 0, 0, 0);  
     strip.setPixelColor(2, 0, 0, 0);
-    strip.setPixelColor(3, 0, 0, 0);
-    strip.setPixelColor(4, 0, 0, 0);
-    strip.setPixelColor(5, 0, 0, 0);
-    strip.setPixelColor(6, 0, 0, 0);  
+    //strip.setPixelColor(3, 0, 0, 0);
+    //strip.setPixelColor(4, 0, 0, 0);
+    //strip.setPixelColor(5, 0, 0, 0);
+    //strip.setPixelColor(6, 0, 0, 0);  
 
     strip.show();
   }
