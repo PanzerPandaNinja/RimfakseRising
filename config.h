@@ -10,8 +10,8 @@ const int MOTOR_LEFT_1_PIN = 18;
 const int MOTOR_LEFT_2_PIN = 19;
 const int MOTOR_RIGHT_1_PIN = 20;
 const int MOTOR_RIGHT_2_PIN = 21;
-
-
+const int MOTOR_ENA_LEFT = 22;
+const int MOTOR_ENA_RIGHT = 23;
 
 int globalCount = 0;
 unsigned long runmotorfor = 0;
@@ -24,11 +24,11 @@ bool motorRunsright = 0;
 /*
  *         Sensors
  */
-const int SENSOR_FRONT_OUT_PIN = 14;
-const int SENSOR_LEFT_OUT_PIN = 15;
-const int SENSOR_RIGHT_OUT_PIN = 16;
+const int SENSOR_FRONT_OUT_PIN = 15;
+const int SENSOR_LEFT_OUT_PIN = 16;
+const int SENSOR_RIGHT_OUT_PIN = 17;
 
-const int STARTMODULE_PIN = 5;
+const int STARTMODULE_PIN = 14;
 const int LED_SLOW_BLINK = 750; //ms
 const int LED_FAST_BLINK = 200; //ms
  
@@ -36,7 +36,7 @@ const int LED_FAST_BLINK = 200; //ms
  *         Led
  */
 #define PIN 2
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(10, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(3, PIN, NEO_GRB + NEO_KHZ800);
 bool changecolor = 1;
 int lysteller = 0;
 
