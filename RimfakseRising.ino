@@ -35,29 +35,29 @@ void loop() {
 
   
   setSensorVar(); //setter sensorvariablene
-  //police_light(); //blinker noe jaevligt
-  
+  police_light(); //blinker 
+
   
   //carDrive();//omgå startmodul
 
     if (startmodule_state == WAITING)
   {
-    Serial.println("WAIT");
-    oneNeo(3,0,0,100);
+    //Serial.println("WAIT");
+    //oneNeo(3,0,0,100);
     carWait();
   }
   else if (startmodule_state == RUNNING)
   {
     Serial.println("DRIVE");
     carDrive();
-    oneNeo(3,0,100,0);
+    //oneNeo(3,0,100,0);
     police_light();
   }
   else if (startmodule_state == STOP)
   {
     Serial.println("STOP");
     ledOff();
-    oneNeo(3,100,0,0);
+    //oneNeo(3,100,0,0);
     carStop();
   }
 

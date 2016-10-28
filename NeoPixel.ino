@@ -2,7 +2,7 @@
 
 
 void police_light(){
-  if (lysteller > 200) {
+  if (lysteller > 1000) {
     lysteller = 0;
     if (changecolor)
     changecolor = 0;
@@ -14,25 +14,16 @@ void police_light(){
     lysteller ++;
     }
 	if (changecolor) {
-    strip.setPixelColor(0, 100, 0, 0);
-    strip.setPixelColor(1, 100, 0, 0);  
-    strip.setPixelColor(2, 100, 0, 0);
-    //strip.setPixelColor(3, 0, 100, 0);
-    //strip.setPixelColor(4, 0, 0, 100);
-    //strip.setPixelColor(5, 0, 0, 100);
-    //strip.setPixelColor(6, 0, 0, 100);  
+    strip.setPixelColor(0, 120, 0, 0);
+    strip.setPixelColor(1, 0, 0, 120);  
+    strip.setPixelColor(2, 0, 0, 120);
     strip.show();
 	}
 	
 	else {
-    strip.setPixelColor(0, 0, 0, 100);
-    strip.setPixelColor(1, 0, 0, 100);  
-    strip.setPixelColor(2, 0, 0, 100);
-    //strip.setPixelColor(3, 0, 0, 0);
-    //strip.setPixelColor(4, 100, 0, 0);
-    //strip.setPixelColor(5, 100, 0, 0);
-    //strip.setPixelColor(6, 100, 0, 0);  
-
+    strip.setPixelColor(0, 0, 0, 120);
+    strip.setPixelColor(1, 120, 0, 0);  
+    strip.setPixelColor(2, 120, 0, 0);
     strip.show();
 	}
   }//end police_light
@@ -41,12 +32,7 @@ void ledOff()
 {
     strip.setPixelColor(0, 0, 0, 0);
     strip.setPixelColor(1, 0, 0, 0);  
-    strip.setPixelColor(2, 0, 0, 0);
-    //strip.setPixelColor(3, 0, 0, 0);
-    //strip.setPixelColor(4, 0, 0, 0);
-    //strip.setPixelColor(5, 0, 0, 0);
-    //strip.setPixelColor(6, 0, 0, 0);  
-
+    strip.setPixelColor(2, 0, 0, 0); 
     strip.show();
   }
 

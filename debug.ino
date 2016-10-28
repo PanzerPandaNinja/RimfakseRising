@@ -11,12 +11,13 @@ void serialSensors(){
   Serial.println(getAverageSensorDistanceInCm(SENSOR_RIGHT_OUT_PIN));
 */
 
-  Serial.print(" Front: ");
+  //Serial.print(" Front: ");
   Serial.print(frontSensorValue);
-  Serial.print("        Left: ");
+  Serial.print("\t");
   Serial.print(leftSensorValue);
-  Serial.print("        Right:");
-  Serial.println(rightSensorValue);
+  Serial.print("\t");
+  Serial.print(rightSensorValue);
+  Serial.println("\t");
 
   //Serial.print("        leftWall: ");
   //Serial.print(leftWallValue);
