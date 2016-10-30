@@ -1,7 +1,7 @@
 /*
  * Methods for controlling the car.
  * The car has parts it controls, like motor, steering and sensors.
- */
+ 
 
 void carWait()
 {
@@ -21,3 +21,5 @@ void carStop()
   ledBlink(LED_FAST_BLINK);
   allStop();
 }
+
+*/

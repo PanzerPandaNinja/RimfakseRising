@@ -1,57 +1,57 @@
 void forward() {
 
-digitalWrite(MOTOR_LEFT_1_PIN , HIGH);
-digitalWrite(MOTOR_LEFT_2_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_1_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_2_PIN , HIGH);
+analogWrite(MOTOR_LEFT_1_PIN , PWM_SPEED);
+analogWrite(MOTOR_LEFT_2_PIN , 0);
+analogWrite(MOTOR_RIGHT_1_PIN , 0);
+analogWrite(MOTOR_RIGHT_2_PIN , PWM_SPEED);
 
 }
 
 void reverse() {
-digitalWrite(MOTOR_LEFT_1_PIN , LOW);
-digitalWrite(MOTOR_LEFT_2_PIN , HIGH);
-digitalWrite(MOTOR_RIGHT_1_PIN , HIGH);
-digitalWrite(MOTOR_RIGHT_2_PIN , LOW);
-  
+analogWrite(MOTOR_LEFT_1_PIN , 0);
+analogWrite(MOTOR_LEFT_2_PIN , PWM_SPEED);
+analogWrite(MOTOR_RIGHT_1_PIN , PWM_SPEED);
+analogWrite(MOTOR_RIGHT_2_PIN , 0);
+
 
 }
 
 void turnRight() {
-digitalWrite(MOTOR_LEFT_1_PIN , LOW);
-digitalWrite(MOTOR_LEFT_2_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_1_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_2_PIN , HIGH);
+analogWrite(MOTOR_LEFT_1_PIN , 0);
+analogWrite(MOTOR_LEFT_2_PIN , 0);
+analogWrite(MOTOR_RIGHT_1_PIN , 0);
+analogWrite(MOTOR_RIGHT_2_PIN , PWM_SPEED);
 }
 
 void turnHardRight() {
-digitalWrite(MOTOR_LEFT_1_PIN , LOW);
-digitalWrite(MOTOR_LEFT_2_PIN , HIGH);
-digitalWrite(MOTOR_RIGHT_1_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_2_PIN , HIGH);
+analogWrite(MOTOR_LEFT_1_PIN , 0);
+analogWrite(MOTOR_LEFT_2_PIN , PWM_SPEED);
+analogWrite(MOTOR_RIGHT_1_PIN , 0);
+analogWrite(MOTOR_RIGHT_2_PIN , PWM_SPEED);
 }
 
 void turnLeft() {
 
-digitalWrite(MOTOR_LEFT_1_PIN , HIGH);
-digitalWrite(MOTOR_LEFT_2_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_1_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_2_PIN , LOW);
+analogWrite(MOTOR_LEFT_1_PIN , PWM_SPEED);
+analogWrite(MOTOR_LEFT_2_PIN , 0);
+analogWrite(MOTOR_RIGHT_1_PIN , 0);
+analogWrite(MOTOR_RIGHT_2_PIN , 0);
 }
 
 void turnHardLeft() {
-digitalWrite(MOTOR_LEFT_1_PIN , HIGH);
-digitalWrite(MOTOR_LEFT_2_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_1_PIN , HIGH);
-digitalWrite(MOTOR_RIGHT_2_PIN , LOW);
+analogWrite(MOTOR_LEFT_1_PIN , PWM_SPEED);
+analogWrite(MOTOR_LEFT_2_PIN , 0);
+analogWrite(MOTOR_RIGHT_1_PIN , PWM_SPEED);
+analogWrite(MOTOR_RIGHT_2_PIN , 0);
   
 
 }
 
 void allStop() {
-digitalWrite(MOTOR_LEFT_1_PIN , LOW);
-digitalWrite(MOTOR_LEFT_2_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_1_PIN , LOW);
-digitalWrite(MOTOR_RIGHT_2_PIN , LOW);
+analogWrite(MOTOR_LEFT_1_PIN , 0);
+analogWrite(MOTOR_LEFT_2_PIN , 0);
+analogWrite(MOTOR_RIGHT_1_PIN , 0);
+analogWrite(MOTOR_RIGHT_2_PIN , 0);
 }
 
 void runmotor() {

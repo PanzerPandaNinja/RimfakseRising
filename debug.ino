@@ -17,6 +17,8 @@ void serialSensors(){
   Serial.print(leftSensorValue);
   Serial.print("\t");
   Serial.print(rightSensorValue);
+  Serial.print("\t");
+  Serial.print(analogRead(STARTMODULE_PIN));
   Serial.println("\t");
 
   //Serial.print("        leftWall: ");

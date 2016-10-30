@@ -1,6 +1,4 @@
 
-
-
 void police_light(){
   if (lysteller > 1000) {
     lysteller = 0;
@@ -41,11 +39,22 @@ void oneNeo(int led, int red, int green, int blue){
   strip.show();
 }
 
-void ledBlink()
+void ledGreen()
 {
-  
+    strip.setPixelColor(0, 0, 120, 0);
+    strip.setPixelColor(1, 0, 120, 0);  
+    strip.setPixelColor(2, 0, 120, 0);
+    strip.show();
 }
- 
+
+
+void ledRed()
+{
+    strip.setPixelColor(0, 120, 0, 0);
+    strip.setPixelColor(1, 120, 0, 0);  
+    strip.setPixelColor(2, 120, 0, 0);
+    strip.show();
+}
  /*
   *     
     strip.setPixelColor(0, 0, 0, 0);
