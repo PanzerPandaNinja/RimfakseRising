@@ -23,7 +23,7 @@ void setup() {
   pinMode(MOTOR_RIGHT_1_PIN,OUTPUT);
   pinMode(MOTOR_RIGHT_2_PIN,OUTPUT);
  
-  Serial.begin(115200);
+  Serial1.begin(115200);
 }
 
 
@@ -39,19 +39,19 @@ void loop() {
 
     if (startmodule_state == WAITING)
   {
-    //Serial.println("WAIT");
+    //Serial1.println("WAIT");
     ledGreen();
     allStop();
   }
   else if (startmodule_state == RUNNING)
   {
-    //Serial.println("DRIVE");
+    //Serial1.println("DRIVE");
     smartMove();
     police_light();
   }
   else if (startmodule_state == STOP)
   {
-    //Serial.println("STOP");
+    //Serial1.println("STOP");
     ledRed();
     allStop();
   }

@@ -40,6 +40,8 @@ int pos = 0;
 int leftWallValue = 0;
 int rightWallValue = 0;
 int frontValue = 0;
+int middleValue = 0; // the result of rightSensorValue - leftSensorValue
+int drifValue = 0; // How much the robot can drift from the middle
 
 /*     Constants     */
 
@@ -49,7 +51,7 @@ const int SENSOR_MIN_DISTANCE = 10; //cm
 const int SENSOR_MAX_DISTANCE = 150; //cm
 
 const int SLOW_TO_FAST_DISTANCE = 70; //cm. If distance in front shorter than this, go SLOW. If equal or over, go FAST.
-const int CRASH_DISTANCE = 50; //cm - below this indicates that we've stuck up against a wall or opponent.
+const int CRASH_DISTANCE = 20; //cm - below this indicates that we've stuck up against a wall or opponent.
 
  enum startmoduleStates {
   WAITING,

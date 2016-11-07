@@ -59,11 +59,11 @@ void runmotor() {
     currentMillis = millis();
     runmotorfor = currentMillis;
     prevMillis = currentMillis;
-    Serial.print(currentMillis);
-    Serial.print("     ");
-    Serial.print(prevMillis);
-    Serial.print("     ");
-    Serial.println(runmotorfor);
+    Serial1.print(currentMillis);
+    Serial1.print("     ");
+    Serial1.print(prevMillis);
+    Serial1.print("     ");
+    Serial1.println(runmotorfor);
   }
 }
 
@@ -121,11 +121,11 @@ void runmotor() {
     currentMillis = millis();
     runmotorfor = currentMillis;
     prevMillis = currentMillis;
-    Serial.print(currentMillis);
-    Serial.print("     ");
-    Serial.print(prevMillis);
-    Serial.print("     ");
-    Serial.println(runmotorfor);
+    Serial1.print(currentMillis);
+    Serial1.print("     ");
+    Serial1.print(prevMillis);
+    Serial1.print("     ");
+    Serial1.println(runmotorfor);
   }
 }
 */

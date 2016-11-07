@@ -3,51 +3,51 @@
 
 void serialSensors(){
   /*
-  Serial.print(" Front: ");
-  Serial.print(getAverageSensorDistanceInCm(SENSOR_FRONT_OUT_PIN));
-  Serial.print("        Left: ");
-  Serial.print(getAverageSensorDistanceInCm(SENSOR_LEFT_OUT_PIN));
-  Serial.print("        Right:");
-  Serial.println(getAverageSensorDistanceInCm(SENSOR_RIGHT_OUT_PIN));
+  Serial1.print(" Front: ");
+  Serial1.print(getAverageSensorDistanceInCm(SENSOR_FRONT_OUT_PIN));
+  Serial1.print("        Left: ");
+  Serial1.print(getAverageSensorDistanceInCm(SENSOR_LEFT_OUT_PIN));
+  Serial1.print("        Right:");
+  Serial1.println(getAverageSensorDistanceInCm(SENSOR_RIGHT_OUT_PIN));
 */
 
-  //Serial.print(" Front: ");
-  Serial.print(frontSensorValue);
-  Serial.print("\t");
-  Serial.print(leftSensorValue);
-  Serial.print("\t");
-  Serial.print(rightSensorValue);
-  Serial.print("\t");
-  Serial.print(analogRead(STARTMODULE_PIN));
-  Serial.println("\t");
+  //Serial1.print(" Front: ");
+  Serial1.print(leftSensorValue);
+  Serial1.print("\t");
+  Serial1.print(frontSensorValue);
+  Serial1.print("\t");
+  Serial1.print(rightSensorValue);
+  Serial1.print("\t");
+  Serial1.print(analogRead(STARTMODULE_PIN));
+  Serial1.println("\t");
 
-  //Serial.print("        leftWall: ");
-  //Serial.print(leftWallValue);
-  //Serial.print("        rightWall:");
-  //Serial.println(rightWallValue);
+  //Serial1.print("        leftWall: ");
+  //Serial1.print(leftWallValue);
+  //Serial1.print("        rightWall:");
+  //Serial1.println(rightWallValue);
 }
 
 
 void testDrive(){
-  Serial.println("Forward");
+  Serial1.println("Forward");
   forward();
   delay(2000);
-  Serial.println("Reverse");
+  Serial1.println("Reverse");
   reverse();
   delay(2000);
-  Serial.println("Right");
+  Serial1.println("Right");
   turnRight();
   delay(2000);
-  Serial.println("Left");
+  Serial1.println("Left");
   turnLeft();
   delay(2000);
-  Serial.println("HardRight");  
+  Serial1.println("HardRight");  
   turnHardRight();
   delay(2000);
-  Serial.println("HardLeft");
+  Serial1.println("HardLeft");
   turnHardLeft();
   delay(2000);
-  Serial.println("STOP!");
+  Serial1.println("STOP!");
   allStop();
   delay(10000);
 }
