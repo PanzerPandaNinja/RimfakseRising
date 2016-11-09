@@ -12,7 +12,8 @@ bool motorRuns = 0;
 bool motorRunsright = 0;
 
 int PWM_SPEED = 130;
-
+int leftPWM = 0;
+int rightPWM = 0;
 
 /*        Sensors       */
 const int SENSOR_FRONT_OUT_PIN = 17;
@@ -41,7 +42,10 @@ int leftWallValue = 0;
 int rightWallValue = 0;
 int frontValue = 0;
 int middleValue = 0; // the result of rightSensorValue - leftSensorValue
-int drifValue = 0; // How much the robot can drift from the middle
+int driftValue = 0; // How much the robot can drift from the middle
+int right_limited_cm = 0;
+int left_limited_cm = 0;
+
 
 /*     Constants     */
 

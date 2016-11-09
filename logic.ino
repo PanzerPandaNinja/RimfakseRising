@@ -14,9 +14,26 @@ void smartMove() {
       }
     }
     
-  else { forward(); }
+  else { 
+    frontValue = 0;
+    forward(); }
 }
 
+void forwardWithCorrection()
+{
+
+float maxSensorDistance = 70;
+right_limited_cm= min(rightSensorValue, maxSensorDistance);
+left_limited_cm= min(leftSensorValue, maxSensorDistance);
+
+float  e = (float)( right_limited_cm - left_limited_cm);  // if we are close to the left, positive value, close to right is negative value.
+
+float K = 1.0;      // Juster denne ved behov. Antar middleValue er i Cm Maks e = 70 og -70 ved 40 (driftValue), så tar annen logikk over. Så maks er egentlig 30.
+PWM_SPEED = 130;              // Dette skal være forward speeden din.
+leftPWM = PWM_SPEED + e*K;       // Positive error – Means we are close to left wall.
+rightPWM = PWM_SPEED - e*K;     // Positive error – Means we are close to left wall. Negative e is close to right wall.
+
+}
 
 
 /*
