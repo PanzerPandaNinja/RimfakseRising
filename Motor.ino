@@ -7,6 +7,15 @@ analogWrite(MOTOR_RIGHT_2_PIN , PWM_SPEED);
 
 }
 
+void forwardSteer() {
+
+analogWrite(MOTOR_LEFT_1_PIN , rightPWM);
+analogWrite(MOTOR_LEFT_2_PIN , 0);
+analogWrite(MOTOR_RIGHT_1_PIN , 0);
+analogWrite(MOTOR_RIGHT_2_PIN , leftPWM);
+
+}
+
 void reverse() {
 analogWrite(MOTOR_LEFT_1_PIN , 0);
 analogWrite(MOTOR_LEFT_2_PIN , PWM_SPEED);
@@ -54,18 +63,6 @@ analogWrite(MOTOR_RIGHT_1_PIN , 0);
 analogWrite(MOTOR_RIGHT_2_PIN , 0);
 }
 
-void runmotor() {
-  if (motorRuns) {
-    currentMillis = millis();
-    runmotorfor = currentMillis;
-    prevMillis = currentMillis;
-    Serial1.print(currentMillis);
-    Serial1.print("     ");
-    Serial1.print(prevMillis);
-    Serial1.print("     ");
-    Serial1.println(runmotorfor);
-  }
-}
 
 
 

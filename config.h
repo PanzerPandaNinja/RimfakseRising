@@ -4,14 +4,7 @@ const int MOTOR_LEFT_2_PIN = 20;
 const int MOTOR_RIGHT_1_PIN = 22;
 const int MOTOR_RIGHT_2_PIN = 23;
 
-int globalCount = 0;
-unsigned long runmotorfor = 0;
-unsigned long currentMillis = 0;
-unsigned long prevMillis = 0;
-bool motorRuns = 0;
-bool motorRunsright = 0;
-
-int PWM_SPEED = 130;
+int PWM_SPEED = 200;
 int leftPWM = 0;
 int rightPWM = 0;
 
@@ -38,11 +31,8 @@ int frontSensorValue = 0;
 int rightSensorValue = 0;
 int leftSensorValue = 0;
 int pos = 0;
-int leftWallValue = 0;
-int rightWallValue = 0;
-int frontValue = 0;
-int middleValue = 0; // the result of rightSensorValue - leftSensorValue
-int driftValue = 0; // How much the robot can drift from the middle
+
+
 int right_limited_cm = 0;
 int left_limited_cm = 0;
 
@@ -55,7 +45,7 @@ const int SENSOR_MIN_DISTANCE = 10; //cm
 const int SENSOR_MAX_DISTANCE = 150; //cm
 
 const int SLOW_TO_FAST_DISTANCE = 70; //cm. If distance in front shorter than this, go SLOW. If equal or over, go FAST.
-const int CRASH_DISTANCE = 20; //cm - below this indicates that we've stuck up against a wall or opponent.
+const int CRASH_DISTANCE = 30; //cm - below this indicates that we've stuck up against a wall or opponent.
 
  enum startmoduleStates {
   WAITING,

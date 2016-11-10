@@ -1,6 +1,6 @@
 
 void police_light(){
-  if (lysteller > 1000) {
+  if (lysteller > 200) {
     lysteller = 0;
     if (changecolor)
     changecolor = 0;

@@ -30,7 +30,6 @@ void setup() {
 void loop() {
   
   setSensorVar(); //setter sensorvariablene
-
   // FOR DEBUGGING
   serialSensors();
   //testDrive();
@@ -46,8 +45,8 @@ void loop() {
   else if (startmodule_state == RUNNING)
   {
     //Serial1.println("DRIVE");
-    smartMove();
     police_light();
+    smartMove();
   }
   else if (startmodule_state == STOP)
   {
